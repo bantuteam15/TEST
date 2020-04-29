@@ -1,0 +1,333 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+.pgcontent{
+    position: relative;
+    min-height: 100vh;
+}
+
+/*Header*/
+.navbar-default .navbar-brand {
+    color: black;
+    font-family: 'Bangers', cursive;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #383838;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+/* Index page- Thumbnails*/
+.thumbnail img {
+    width: 100%;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  height: 100%;
+    display: flex;
+  flex-direction: column;
+}
+
+.thumbnail .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Mascot */
+
+#mascot{
+	height: 250px;
+}
+
+.jumbotron {
+  background-image: url("/img/night.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: -22px;
+  margin-bottom:0;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+.brand{
+	height: auto;
+}
+
+/*dbtables*/
+.dbtables{
+  font-family: 'Anton', sans-serif;
+}
+
+/*New Campground Page*/
+.newCampground{
+  background-image: url("/img/night.png");
+}
+
+.NC h1{
+  color: white;
+}
+
+.th-index>img {
+    padding: 0;
+    height: 160px;
+}
+
+.th-show>img {
+    padding: 0;
+    height: 160px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-form {
+	display: inline;
+}
+
+h2{
+	color: white;
+}
+
+p{
+	color: black;
+}
+
+
+
+.login{
+	margin: auto auto;
+}
+
+
+
+/* Small Devices: < 992px */
+@media (max-width: 991px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px)
+.col-sm-6 {
+    width: 50%;
+    margin: auto;
+}
+
+/* Extra Small Devices: < 768px */
+@media (max-width: 991px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra Small Devices: < 451px */
+@media (max-width: 450px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+/* Login & Signup Page */
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #e98f23;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+
+
+/*Admin Results table*/
+
+#results {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#results tr {background-color: white;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.signup-page{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+
+
+
+.btn-primary {
+    background-color: #e98f23;
+}
+
+/*About us*/
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.aboutusbox {
+  padding: 0 16px;
+}
+
+.aboutusbox::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.about-section h1,h2,title{
+   font-family: Roboto, sans-serif;
+}
+
+
+
+/*Footer*/
+.footer {
+  position: inherit;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: #1e5663 ;
+  color: white;
+  text-align: center;
+
+}
+
+.footer p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: white;
+}

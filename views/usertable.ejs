@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+<section class="pgcontent">
+<header>
+  <h3> Users Table</h3>
+</header>
+<table id="results">
+    <tr>
+      <th>Name</th>
+      <th>Is an admin?</th>
+     
+    </tr>
+    <% for(var i=0;i<results.length;i++){ %>
+      <% var rows = results[i] %>
+    <tr>
+        <td> <%= rows.username %> </td>
+        <td> <%= rows.isAdmin %> </td>       
+    </tr>
+    <% } %>
+</table>
+
+<a href="/campgrounds">Campgrounds Page</a>
+</section>
+<% include ./partials/footer %>

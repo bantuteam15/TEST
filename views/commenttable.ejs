@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<section class="pgcontent">
+<header>
+  <h3> Comments Table</h3>
+</header>
+<table id="results">
+    <tr>
+      <th>User</th>
+      <th>Review</th>
+      <th>Created At:</th>     
+    </tr>
+    <% for(var i=0;i<results.length;i++){ %>
+      <% var rows = results[i] %>
+    <tr>
+        <td> <%= rows.author.username %> </td>
+        <td> <%= rows.text %> </td>
+        <td> <%= rows.createdAt %> </td>       
+    </tr>
+    <% } %>
+</table>
+
+<a href="/campgrounds">Campgrounds Page</a>
+</section>
+<% include ./partials/footer %>
